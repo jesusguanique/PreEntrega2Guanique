@@ -41,14 +41,15 @@
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="actividades.html">Actividades</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                      </li>
+                      
                       <li class="nav-item">
                         <a class="nav-link" href="sedes.html">Sedes</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="planes.html">Planes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
                       </li>
                       
                     </ul>
@@ -66,35 +67,34 @@
             <h1>Contacto</h1>
         </section>
 
-        <section id="formulario">
-            <h2>Contactanos y dejanos tus dudas</h2>
+        <div class="contenedor">
+            <form action="" class="form">
+                <div class="form-header">
+                    <h3 class="form-title">D<span>ejanos tus dudas</span></h3>
+                </div>
+                    
+                    
+                    <label for="nombre" class="form-label">Nombres:</label>
+                    <input type="text" id="nombre" class="form-input" placeholder="Escriba su nombre">     
+                    
+                    <label for="direccion" class="form-label">Direccion:</label>
+                    <input type="text" id="direccion" class="form-input" placeholder="Escriba su direccion">  
         
-            <p>Respondemos en menos de 24hrs!</p>
-          
-            <form>
-                <label for="name">Nombre y Apellido :</label>
-                <input type="text" placeholder="Escriba su Nombre" id="nombre"
-                    required>
-               
-                <label for="mail">Email :</label>
-                <input type="text" placeholder="Escriba su Email" id="mail"
-                    required>
-              
-
-                <label for="tel">Telefono : </label>
-                <input type="text" placeholder="Escriba su Numero" id="telf"
-                    required>
-              
-
-                <label for="mensaje">Deja tu mensaje</label> <br>
-                <textarea name="" id="mensaje" cols="40" rows="15"></textarea>
-             
-                <input type="reset" value="Cancelar">
-                <input type="submit" value="Enviar">
+                    <label for="correo" class="form-label">Email:</label>
+                    <input type="text" id="correo" class="form-input" placeholder="Escriba su correo">  
+        
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea class="form-textarea" name="mensaje" id="mensaje" placeholder="Deje su mensaje"></textarea>
+        
+                <input type="submit" class="btn-submit" value="Enviar consulta">
+                
+                
+            
+        
+        
+            
             </form>
-
-        </section>
-
+        </div>
        
         <footer>
             <div class="foot-container">
