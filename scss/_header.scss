@@ -1,0 +1,118 @@
+.home {
+    background-color: rgba(71, 69, 69, 0.5);
+
+    .carousel-item {
+        min-height: 90vh;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: $widthMax;
+            height: $widthMax;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: -1;
+
+        }
+
+        .container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            .botonc {
+                border-radius: 10px;
+                padding: 10px 20px;
+                margin-top: 60px;
+                background-image: linear-gradient(-225deg, #2B1CFD 0%, #1B3CE6 25%, #287CFA 50%, #287CFA 75%, #1CDFFD 100%);
+                color: rgb(245, 245, 245);
+                letter-spacing: $borderSpace;
+                border: 2px solid rgba(0, 0, 0, 0.7);
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+
+                &:hover {
+                    box-shadow: 0 0 30px rgb(7, 7, 7) inset;
+                }
+
+            }
+
+        }
+
+        h1 {
+            font-size: 65px;
+            color: $secondaryColor;
+            margin: 0 0 10px;
+            opacity: 0;
+            border: $borderSpace;
+        }
+
+        form {
+            font-size: $textSm;
+            margin: 0;
+            opacity: 0;
+
+        }
+
+    }
+
+    .carousel-item.active {
+        h1 {
+            animation: fadeInleft 1s ease forwards;
+        }
+
+        form {
+            animation: fadeInRight 1s ease forwards;
+        }
+    }
+
+}
+
+#part1 {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.0),
+            rgba(0, 0, 0, 0.6)), url("../img/rutina-gimnasio-5-dias-1-1.jpg");
+}
+
+#part2 {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.0),
+            rgba(0, 0, 0, 0.6)), url("../img/fondo22.jpg");
+
+}
+
+#part3 {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.0),
+            rgba(0, 0, 0, 0.6)), url("../img/carta1.jpg");
+}
+
+@keyframes fadeInleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

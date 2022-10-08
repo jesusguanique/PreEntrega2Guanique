@@ -1,0 +1,200 @@
+#encabezado h1 {
+    font-size: $textXxl;
+    text-align: center;
+    @include size(100%, auto);
+    padding: 125px;
+    color: $secondaryColor;
+    justify-content: center;
+}
+
+/*HTML-ACTIVIDADES*/
+
+#grilla {
+    background-color: $secondaryColor;
+    justify-content: center;
+    padding: $marginMd;
+    text-align: center;
+    @include size(100%, auto);
+    border-spacing: 10px;
+
+    .table {
+        padding: $marginMd;
+        justify-content: center;
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        margin: 100px 0;
+        border-spacing: 10px;
+        color: $secondaryColor;
+
+        th {
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 20px;
+            background-color: rgb(32, 32, 32);
+            margin: 10px;
+            color: $secondaryColor;
+            border-spacing: 10px;
+
+        }
+
+        td {
+            border-radius: 15px;
+            background-image: linear-gradient(-225deg, #00a552 0%, rgba(7, 145, 119, 0.9725490196) 50%, #06adad 100%);
+            font-size: 20px;
+            padding: 20px;
+            border-spacing: 10px;
+        }
+
+
+    }
+
+}
+
+/*HTML-SEDES*/
+
+
+.titulo3 {
+    text-align: center;
+    padding: $marginMd;
+    background-color: $secondaryColor;
+}
+
+
+
+
+/*CONTACTO html*/
+
+.contenedor {
+    background-color: $secondaryColor;
+    padding: $marginMd;
+
+    .form {
+        background: rgba(119, 117, 117, 0.6);
+        width: 90%;
+        max-width: 650px;
+        margin: auto;
+        padding: 5px 35px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 5px;
+
+        .form-label {
+            display: block;
+            color: rgb(19, 95, 146);
+            font-size: 18px;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .form-textarea {
+            @extend .form-input;
+            resize: vertical;
+            max-height: 150px;
+            min-height: $marginMd;
+
+        }
+
+        .form-header {
+            .form-title {
+                font-weight: 600;
+                font-family: sans-serif;
+                color: $colorOne;
+                text-align: center;
+                padding: 14px 0;
+
+                span {
+                    color: $mainColor;
+                    font-weight: 600;
+                }
+
+            }
+        }
+
+        .btn-submit {
+            width: 100%;
+            font-family: sans-serif;
+            outline: none;
+            background-image: linear-gradient(-225deg, #3B49F5 0%, #3872FC 30%, #3D95E6 70%, #38C9FC 100%);
+            font-size: 20px;
+            border: none;
+            color: $secondaryColor;
+            padding: 15px 0;
+            cursor: pointer;
+            transition: all .5s ease;
+            letter-spacing: $borderSpace;
+            border-radius: 7px;
+
+            &:hover {
+                background-image: linear-gradient(-225deg, #2275FA 0%, #1494E3 50%, #17DAFD 100%);
+            }
+
+        }
+
+        .form-input {
+            background: rgba(0, 0, 0, .7);
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #17DAFD;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: $borderSpace;
+            font-size: 14px;
+            color: $secondaryColor;
+            font-family: sans-serif;
+
+
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: thick double #73b6d1;
+        }
+
+    }
+
+}
+
+/*PLANES HTML*/
+
+.tituloplan {
+    text-align: center;
+    padding: $marginMd;
+    background-color: $secondaryColor;
+}
+
+#planes-total2 {
+    .planes2 {
+        display: flex;
+        justify-content: center;
+        color: $colorThree;
+        background-color: $secondaryColor;
+        padding: 80px;
+        height: 80vh;
+        text-align: center;
+
+        .opcion1 {
+            padding: $marginMd;
+            @include size(25%, 100%);
+            background-color: $colorOne;
+            margin: 16px;
+            border-radius: 5px;
+        }
+
+        .opcion2 {
+            padding: $marginMd;
+            background-color: $colorOne;
+            margin: 16px;
+            border-radius: 5px;
+            @include size(25%, 100%);
+        }
+    }
+
+    p {
+        display: none;
+        display: block;
+        margin-bottom: 100px;
+        margin-top: 70px;
+
+    }
+}

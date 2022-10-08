@@ -1,0 +1,30 @@
+//vars
+$mainColor: rgba(7, 7, 7, 0.9);
+$secondaryColor: rgb(245, 245, 245);
+$colorOne: rgb(22, 132, 206);
+$colorTwo: rgb(22, 169, 206);
+$colorThree: rgb(23, 23, 23);
+
+$textXxl: 4rem;
+$textXl: 3.5rem;
+$textL: 3rem;
+$textMd: 2rem;
+$textSm: 1.25rem;
+
+$marginSm: 1rem;
+$marginMd: 50px;
+
+$weightOne: 500;
+
+$borderSpace: 2px;
+
+$widthMax: 100%;
+
+//mixins
+
+@mixin size ($widthsize , $heightsize) {
+    width: $widthsize;
+    height: $heightsize;
+}
+
+//

@@ -1,0 +1,110 @@
+#nuestros-planes {
+    background-color: $colorThree;
+    text-align: center;
+
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 50px;
+        color: $secondaryColor;
+        text-align: center;
+        padding: 100px 12px;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .carta:first-child {
+            background-image: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0.1),
+                    rgba(0, 0, 0, 0.8)), url("../img/carta1.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .carta:nth-child(2) {
+            background-image: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0.1),
+                    rgba(0, 0, 0, 0.8)), url("../img/carta2.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .carta:last-child {
+            background-image: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0.1),
+                    rgba(0, 0, 0, 0.8)), url("../img/carta3.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+
+    }
+
+    h2 {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        color: $secondaryColor;
+        padding-top: 57px;
+    }
+
+    p {
+        display: block;
+        font-size: 0.9rem;
+        margin: 10px 0;
+
+    }
+
+    .botonp {
+        font-size: 0.8rem;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: 2px solid rgba(0, 0, 0, 0.7);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        background-image: linear-gradient(-225deg, #362cfd 0%, #4563E6 50%, #3F8CFC 100%);
+        cursor: pointer;
+        color: rgb(245, 245, 245);
+        letter-spacing: 1px;
+        margin-top: 20px;
+
+        &:hover {
+            box-shadow: 0 0 10px rgb(7, 7, 7) inset;
+        }
+
+    }
+
+    .boton2 {
+        margin-top: 20px;
+        background-image: linear-gradient(-225deg, #2275FA 0%, #1494E3 50%, #17DAFD 100%);
+    }
+
+    .boton3 {
+        margin-top: 20px;
+        background-image: linear-gradient(-225deg, #00a552 0%, #079177f8 50%, #06adad 100%);
+    }
+
+    .carta {
+        @include size (33%, auto);
+        max-height: 400px;
+        min-height: 400px;
+        padding: 50px 20px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .fit {
+        color: rgb(22, 132, 206);
+    }
+
+    .full {
+        color: rgb(22, 169, 206);
+    }
+
+    .vip {
+        color: rgba(24, 204, 165, 0.774)
+    }
+
+    .planes button {
+        margin-top: 40px;
+    }
+}
